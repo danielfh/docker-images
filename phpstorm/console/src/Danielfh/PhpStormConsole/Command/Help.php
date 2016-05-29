@@ -23,7 +23,7 @@ class Help extends Command
         $symfonyStyle->block('In order to use this image you must to set the following data:');
         $symfonyStyle->listing([
             'Export your environment DISPLAY var. -e DISPLAY=$DISPLAY',
-            'Export the id for the user who want\'s to execute this app. -e PHPSTORM_USER=$(id -u)',
+            'Export the id for the user who wants to execute this app. -e PHPSTORM_USER=$(id -u)',
             'Mount your X11 socket. -v /tmp/.X11-unix:/tmp/.X11-unix',
             'Mount a folder in /opt/danielfh/phpstorm/src where the persistent data will be stored. -v $HOME/phpstorm/:/opt/danielfh/phpstorm/',
             'Mount your project(s) folder in /opt/danielfh/phpstorm/home. -v $HOME:/opt/danielfh/phpstorm/home/',
