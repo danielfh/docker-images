@@ -56,15 +56,15 @@ RUN \
 	/usr/sbin/pcscd && \
 
 # install PCSC drivers for OmniKey devices
- mkdir -p \
-	/tmp/omnikey && \
- curl -o \
- /tmp/omnikey.tar.gz -L \
-	https://www.hidglobal.com/sites/default/files/drivers/ifdokccid_linux_x86_64-v4.2.8.tar.gz && \
- tar xzf /tmp/omnikey.tar.gz -C \
-	/tmp/omnikey --strip-components=2 && \
- cd /tmp/omnikey && \
- ./install && \
+# mkdir -p \
+#	/tmp/omnikey && \
+# curl -o \
+# /tmp/omnikey.tar.gz -L \
+#	https://www.hidglobal.com/sites/default/files/drivers/ifdokccid_linux_x86_64-v4.2.8.tar.gz && \
+# tar xzf /tmp/omnikey.tar.gz -C \
+#	/tmp/omnikey --strip-components=2 && \
+# cd /tmp/omnikey && \
+# ./install && \
 
 # fix group for card readers and add abc to dialout group
  groupmod -g 24 cron && \
