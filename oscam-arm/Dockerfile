@@ -67,9 +67,9 @@ RUN \
 # ./install && \
 
 # fix group for card readers and add abc to dialout group
- groupmod -g 24 cron && \
- groupmod -g 16 dialout && \
- usermod -a -G 16 abc && \
+# groupmod -g 24 cron && \
+# groupmod -g 16 dialout && \
+# usermod -a -G 16 abc && \
 
 # cleanup
  apk del --purge \
