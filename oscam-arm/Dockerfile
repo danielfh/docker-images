@@ -25,7 +25,7 @@ RUN \
 	libressl-dev \
 	pcsc-lite-dev \
 	subversion \
-	tar && \
+	tar
 
 # compile oscam from source
  svn checkout http://www.streamboard.tv/svn/oscam/trunk /tmp/oscam-svn && \
@@ -47,7 +47,7 @@ RUN \
 	NO_PLUS_TARGET=1 \
 	CONF_DIR=/config \
 	DEFAULT_PCSC_FLAGS="-I/usr/include/PCSC" \
-	pcsc-libusb && \
+	pcsc-libusb
 
 # fix broken permissions from pcscd install.
  chown root:root \
